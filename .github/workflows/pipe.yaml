@@ -1,0 +1,17 @@
+name: Example workflow for Glasswall Rebuild
+on: [push]
+
+jobs:
+  CI_Pipeline:
+    runs-on: ubuntu-latest
+    name: Pipeline Using Glasswall Rebuild
+    steps:
+      # To use this repository's private action,
+      # you must check out the repository
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Glasswall Rebuild
+        uses: tpilvelis-gw/rebuild-action@v1
+        with:
+          filetype: 'png'
