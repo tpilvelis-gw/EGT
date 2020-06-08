@@ -14,4 +14,4 @@ jobs:
       - name: Glasswall Rebuild
         uses: tpilvelis-gw/rebuild-action@v1
         with:
-          filetype: 'png'
+          filetype: 'xlsx'
